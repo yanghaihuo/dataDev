@@ -83,8 +83,7 @@ load data inpath 'hdfs文件路径' [overwrite] into table table_name [partition
 insert overwrite table table_a [partition (partcol1=val1, partcol2=val2 ...)]
 select
  ...
-from table_b
-;
+from table_b;
 ```
 4）利用 sql 语句直接插入数据到 hive 表  
 
@@ -98,7 +97,7 @@ create table table_a
 as
 select
  ...
-from table_b 
+from table_b; 
 ```
 6）使用第三方软件(如 datax、sqoop)将数据导入到 hive 表
 
@@ -112,7 +111,8 @@ row format delimited
   fields terminated by '\t'
   null defined as ''
 stored as textfile
-select * from table_a;
+select * from table_a
+;
 ```
 2）导出数据到 hdfs
 
@@ -122,7 +122,8 @@ row format delimited
   fields terminated by '\t'
   null defined as ''
 stored as textfile
-select * from table_a;
+select * from table_a
+;
 ```
 * 改表  
 
