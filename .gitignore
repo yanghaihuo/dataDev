@@ -1,0 +1,12 @@
+# mac
+.DS_Store
+
+# idea project file
+.idea
+*.iml
+
+# maven
+target
+
+# package file
+*.jar
